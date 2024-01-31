@@ -1,0 +1,15 @@
+@import "/components/tmp.css";
+@import "/components/index.css";
+
+@font-face {
+    font-family: "Silafejira";
+    src: url("./public/fonts/Silafejira.ttf");
+}
+
+
+:root {
+    --base-font: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: SansSerif, var(--base-font);
+
+    --hover-time: 0.3s;
+}

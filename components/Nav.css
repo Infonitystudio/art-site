@@ -1,0 +1,28 @@
+.Nav__ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.Nav__link {
+    font-size: var(--p3_font);
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: white;
+}
+
+@media (hover: hover) {
+    .Nav__link {
+        text-decoration: underline transparent;
+        text-underline-offset: 0.2em;
+        transition: text-decoration-color var(--hover-time);
+    }
+    .Nav__link:hover {
+        text-decoration-color: currentColor;
+    }
+}

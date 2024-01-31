@@ -1,0 +1,8 @@
+.Header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Header__logo {
+    width: clamp(100px, 15vw, 300px);
+}

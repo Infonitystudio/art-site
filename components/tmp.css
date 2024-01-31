@@ -1,0 +1,53 @@
+:root {
+    background-image: linear-gradient(rgba(0, 0, 0, 50%), rgba(0, 0, 0, 50%)),
+        linear-gradient(45deg, rgba(0, 0, 0, 40%), rgba(0, 0, 0, 10%)),
+        url("/public/images/bg1456.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: min(100vh, 100svh);
+    box-sizing: border-box;
+    padding: min(10vw, 10vh);
+
+    --h1_font: clamp(64px, 20vw, 250px);
+    --p1_font: clamp(16px, 4vw, 35px);
+    --p2_font: clamp(12px, 3vw, 25px);
+    --p3_font: clamp(12px, 3vw, 22px);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100%;
+    width: min(800px, 100%);
+    margin: auto;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body > * {
+    flex-grow: 1;
+}
+
+.h1 {
+    font-size: var(--h1_font);
+    font-weight: 400;
+    font-family: Silafejira, var(--base-font);
+    margin: 0;
+}
+
+.description {
+    font-size: var(--p1_font);
+    text-transform: uppercase;
+    margin: 0;
+    text-align: center;
+}
+
+.small_description {
+    font-size: var(--p2_font);
+}
